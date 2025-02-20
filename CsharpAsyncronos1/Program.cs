@@ -1,12 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System.Security.Cryptography;
 using CsharpAsyncronos1;
 
-Console.WriteLine("Cooking started... ");
-var turkey = new Turkey();
-var gravy = new Gravy();
-await turkey.Cook();
-await gravy.Cook();
+Console.WriteLine($"Starting thread Id: {Environment.CurrentManagedThreadId}");
 
-
-Console.WriteLine("ready to eat");
+DummyTask.Run(() => Console.WriteLine($"First dummy thread Id: {Environment.CurrentManagedThreadId}"))
+    .ConintiueWith(() => Console.WriteLine($"Second thread Id: {Environment.CurrentManagedThreadId}"));
+Console.ReadLine();
