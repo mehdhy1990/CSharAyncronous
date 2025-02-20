@@ -5,6 +5,6 @@ using CsharpAsyncronos1;
 
 Console.WriteLine($"Starting thread Id: {Environment.CurrentManagedThreadId}");
 
-DummyTask.Run(() => Console.WriteLine($"First dummy thread Id: {Environment.CurrentManagedThreadId}"))
-    .ConintiueWith(() => Console.WriteLine($"Second thread Id: {Environment.CurrentManagedThreadId}"));
-Console.ReadLine();
+DummyTask.Run(() => Console.WriteLine($"First dummy thread Id: {Environment.CurrentManagedThreadId}")).Wait();
+Console.WriteLine($"Second dummy thread Id: {Environment.CurrentManagedThreadId}");
+DummyTask.Run(() => Console.WriteLine($"Second dummy thread Id: {Environment.CurrentManagedThreadId}")).Wait();

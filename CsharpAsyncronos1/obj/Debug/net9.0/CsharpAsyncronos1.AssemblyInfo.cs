@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CsharpAsyncronos1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6fef5ede7ed6d18613ea3890500acea2c016108c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1a0c1adf308a6b4c2d3c9a41bb58b312098b6a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("CsharpAsyncronos1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CsharpAsyncronos1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

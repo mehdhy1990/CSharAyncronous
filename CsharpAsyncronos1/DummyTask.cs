@@ -1,4 +1,6 @@
-﻿namespace CsharpAsyncronos1;
+﻿using System.Runtime.ExceptionServices;
+
+namespace CsharpAsyncronos1;
 
 public class DummyTask
 {
@@ -38,6 +40,23 @@ public class DummyTask
         return task;
     }
 
+    public void Wait()
+    {
+        ManualResetEventSlim? resetEvent = null;
+        lock (_lock)
+        {
+            if (!_completed)
+            {
+                resetEvent = new ();
+                ConintiueWith(()=>resetEvent.Set());
+            }
+        }
+        resetEvent?.Wait();
+        if (_exception is not null)
+        {
+            ExceptionDispatchInfo.Throw(_exception);
+        }
+    }
     public DummyTask ConintiueWith(Action action)
     {
         DummyTask task = new();
