@@ -12,3 +12,4 @@ C:\Users\mehdi\RiderProjects\CsharpAsyncronos1\CsharpAsyncronos1\obj\Debug\net9.
 C:\Users\mehdi\RiderProjects\CsharpAsyncronos1\CsharpAsyncronos1\obj\Debug\net9.0\CsharpAsyncronos1.pdb
 C:\Users\mehdi\RiderProjects\CsharpAsyncronos1\CsharpAsyncronos1\obj\Debug\net9.0\CsharpAsyncronos1.genruntimeconfig.cache
 C:\Users\mehdi\RiderProjects\CsharpAsyncronos1\CsharpAsyncronos1\obj\Debug\net9.0\ref\CsharpAsyncronos1.dll
+C:\Users\mehdi\RiderProjects\CsharpAsyncronos1\CsharpAsyncronos1\obj\Debug\net9.0\CsharpAsyncronos1.sourcelink.json

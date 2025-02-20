@@ -5,7 +5,8 @@ using CsharpAsyncronos1;
 Console.WriteLine("Cooking started... ");
 var turkey = new Turkey();
 var gravy = new Gravy();
-await Task.WhenAll(turkey.Cook(), gravy.Cook());
+await turkey.Cook();
+await gravy.Cook();
 
 
 Console.WriteLine("ready to eat");
